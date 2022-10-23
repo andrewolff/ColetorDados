@@ -51,13 +51,13 @@
         android:text="Exportar Dados"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/botaoSair"
+        app:layout_constraintBottom_toTopOf="@+id/sair_final"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/botaoSair"
+        android:id="@+id/sair_final"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"

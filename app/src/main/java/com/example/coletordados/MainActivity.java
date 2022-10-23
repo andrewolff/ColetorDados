@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         editText_Area = (EditText)findViewById(R.id.editText_Area);
         editText_Data = (EditText)findViewById(R.id.editText_Data);
         coletarDados=findViewById(R.id.coletarDados);
-        botaoSair=findViewById(R.id.botaoSair);
+        botaoSair=findViewById(R.id.sair_final);
         excluir=findViewById(R.id.excluir);
         exportar=findViewById(R.id.exportar);
 
