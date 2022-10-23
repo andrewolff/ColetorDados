@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button coletarDados,botaoSair;
+    Button coletarDados,botaoSair,excluir,exportar;
     EditText editText_Id,editText_Fazenda,editText_Projeto,editText_AnoPlantio,editText_Amostra,
             editText_NumeroTalhao,editText_Extrato,editText_Area,editText_Data;
 
@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         editText_Data = (EditText)findViewById(R.id.editText_Data);
         coletarDados=findViewById(R.id.coletarDados);
         botaoSair=findViewById(R.id.botaoSair);
+        excluir=findViewById(R.id.excluir);
+        exportar=findViewById(R.id.exportar);
 
 
         botaoSair.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +47,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(), Formulario.class);
+                startActivity(intent);
+            }
+        });
+
+        excluir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(), Lista.class);
+                startActivity(intent);
+            }
+        });
+
+        exportar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(), Lista.class);
                 startActivity(intent);
             }
         });
