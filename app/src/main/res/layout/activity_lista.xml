@@ -7,41 +7,49 @@
     tools:context=".Lista">
 
     <ListView
-        android:layout_width="403dp"
-        android:layout_height="343dp"
+        android:layout_width="415dp"
+        android:layout_height="434dp"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="173dp" />
+        tools:layout_editor_absoluteY="82dp" />
 
     <Button
-        android:id="@+id/excluir_final"
-        android:layout_width="148dp"
+        android:id="@+id/excluir"
+        android:layout_width="251dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
         android:text="Excluir"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/exportar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/_dynamic" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/exportar_final"
-        android:layout_width="148dp"
+        android:id="@+id/exportar"
+        android:layout_width="251dp"
         android:layout_height="50dp"
-        android:text="Exportar"
+        android:layout_marginBottom="10dp"
+        android:text="Exportar "
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintBottom_toTopOf="@+id/botaoSair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/sair_final"
-        android:layout_width="148dp"
-        android:layout_height="50dp"
+        android:id="@+id/botaoSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="sair"
         android:text="Sair"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
