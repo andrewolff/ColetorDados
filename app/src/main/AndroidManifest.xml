@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ColetorDados">
         <activity
+            android:name=".Fileira04"
+            android:exported="false" />
+        <activity
+            android:name=".Fileira03"
+            android:exported="false" />
+        <activity
+            android:name=".Fileira02"
+            android:exported="false" />
+        <activity
+            android:name=".Fileira01"
+            android:exported="false" />
+        <activity
+            android:name=".Formulario"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
