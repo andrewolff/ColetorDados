@@ -13,9 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ColetorDados">
         <activity
-            android:name=".Exportar"
-            android:exported="false" />
-        <activity
             android:name=".Lista"
             android:exported="false" />
         <activity

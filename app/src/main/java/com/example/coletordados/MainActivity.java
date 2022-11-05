@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
 
         Button btColetar = findViewById(R.id.btColetar);
         btListar = findViewById(R.id.btListar);
-        Button btExportar = findViewById(R.id.btExportar);
         Button btSair = findViewById(R.id.btSair);
 
         btColetar.setOnClickListener(view -> {
@@ -39,10 +38,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
             startActivity(intent);
         });
 
-        btExportar.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), Exportar.class);
-            startActivity(intent);
-        });
+
 
         btSair.setOnClickListener(view -> {
             finish();
