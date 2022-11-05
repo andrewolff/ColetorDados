@@ -1,81 +1,88 @@
 package com.example.coletordados;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.List;
 
-    Button coletarDados,botaoSair,excluir,exportar;
-    EditText editText_Id,editText_Fazenda,editText_Projeto,editText_AnoPlantio,editText_Amostra,
-            editText_NumeroTalhao,editText_Extrato,editText_Area,editText_Data;
+import pub.devrel.easypermissions.AppSettingsDialog;
+import pub.devrel.easypermissions.EasyPermissions;
 
-    BancoDados db = new BancoDados(this);
+public class MainActivity extends AppCompatActivity implements EasyPermissions.PermissionCallbacks {
+    private static final int WRITE_STORAGE_PERMISSION_REQUEST = 100;
+    BancoDados db;
+    Button btListar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        db = new BancoDados(this);
 
-        editText_Id = (EditText)findViewById(R.id.editText_Id);
-        editText_Fazenda = (EditText)findViewById(R.id.editText_Fazenda);
-        editText_Projeto = (EditText)findViewById(R.id.editText_Projeto);
-        editText_AnoPlantio = (EditText)findViewById(R.id.editText_AnoPlantio);
-        editText_Amostra = (EditText)findViewById(R.id.editText_Amostra);
-        editText_NumeroTalhao = (EditText)findViewById(R.id.editText_NumeroTalhao);
-        editText_Extrato = (EditText)findViewById(R.id.editText_Extrato);
-        editText_Area = (EditText)findViewById(R.id.editText_Area);
-        editText_Data = (EditText)findViewById(R.id.editText_Data);
-        coletarDados=findViewById(R.id.coletarDados);
-        botaoSair=findViewById(R.id.sair_final);
-        excluir=findViewById(R.id.excluir);
-        exportar=findViewById(R.id.exportar);
+        Button btColetar = findViewById(R.id.btColetar);
+        btListar = findViewById(R.id.btListar);
+        Button btExportar = findViewById(R.id.btExportar);
+        Button btSair = findViewById(R.id.btSair);
 
-
-        botaoSair.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
+        btColetar.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), Formulario.class);
+            startActivity(intent);
         });
 
-        coletarDados.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), Formulario.class);
-                startActivity(intent);
-            }
+        btListar.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), Lista.class);
+            startActivity(intent);
         });
 
-        excluir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), Lista.class);
-                startActivity(intent);
-            }
+        btExportar.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), Exportar.class);
+            startActivity(intent);
         });
 
-        exportar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), Lista.class);
-                startActivity(intent);
-            }
+        btSair.setOnClickListener(view -> {
+            finish();
         });
 
+        checkPermission();
+    }
 
+    private void checkPermission() {
+        String permission = Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
+        if(!EasyPermissions.hasPermissions(this, permission)){
+            EasyPermissions.requestPermissions(this, "Permissão necessária para exportar a coleta", WRITE_STORAGE_PERMISSION_REQUEST, permission);
+        }
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
 
+        int totalColetas = db.total();
+        btListar.setText("Listar Coletas (" + totalColetas + ")");
+    }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
+    }
+
+    @Override
+    public void onPermissionsGranted(int requestCode, @NonNull List<String> perms) {
 
     }
 
-
-
-
+    @Override
+    public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
+        if(EasyPermissions.somePermissionPermanentlyDenied(this, perms)){
+            new AppSettingsDialog.Builder(this).build().show();
+        }
+    }
 }

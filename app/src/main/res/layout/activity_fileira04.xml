@@ -92,7 +92,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText_Cap01_F4"
+            android:id="@+id/editF4Cap1"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -101,7 +101,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText_Alt01_F4"
+            android:id="@+id/editF4Alt1"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -110,7 +110,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText_Cod01_F4"
+            android:id="@+id/editF4Cod1"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -145,7 +145,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText_Cap02_F4"
+            android:id="@+id/editF4Cap2"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -155,7 +155,7 @@
 
 
         <EditText
-            android:id="@+id/editText_Alt02_F4"
+            android:id="@+id/editF4Alt2"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -164,7 +164,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText_Cod02_F4"
+            android:id="@+id/editF4Cod2"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -199,7 +199,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText_Cap03_F4"
+            android:id="@+id/editF4Cap3"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -209,7 +209,7 @@
 
 
         <EditText
-            android:id="@+id/editText_Alt03_F4"
+            android:id="@+id/editF4Alt3"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -218,7 +218,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText_Cod03_F4"
+            android:id="@+id/editF4Cod3"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -252,7 +252,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText_Cap04_F4"
+            android:id="@+id/editF4Cap4"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -261,7 +261,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText_Alt04_F4"
+            android:id="@+id/editF4Alt4"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -271,7 +271,7 @@
 
 
         <EditText
-            android:id="@+id/editText_Cod04_F4"
+            android:id="@+id/editF4Cod4"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -306,7 +306,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText_Cap05_F4"
+            android:id="@+id/editF4Cap5"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -315,7 +315,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText_Alt05_F4"
+            android:id="@+id/editF4Alt5"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -324,7 +324,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText_Cod05_F4"
+            android:id="@+id/editF4Cod5"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -359,7 +359,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText_Cap06_F4"
+            android:id="@+id/editF4Cap6"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -368,7 +368,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText_Alt06_F4"
+            android:id="@+id/editF4Alt6"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -377,7 +377,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText_Cod06_F4"
+            android:id="@+id/editF4Cod6"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -412,7 +412,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText_Cap07_F4"
+            android:id="@+id/editF4Cap7"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -421,7 +421,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText_Alt07_F4"
+            android:id="@+id/editF4Alt7"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -430,7 +430,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/editText_Cod07_F4"
+            android:id="@+id/editF4Cod7"
             android:layout_width="30dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -442,7 +442,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/botao_salvar_formulario_fileira04"
+        android:id="@+id/btSalvar"
         android:layout_width="148dp"
         android:layout_height="59dp"
         android:text="Salvar"

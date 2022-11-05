@@ -1,27 +1,39 @@
 package com.example.coletordados;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Lista extends AppCompatActivity {
-
-    Button sair_final;
+    private RecyclerView recyclerDados;
+    private ListaAdapter listaAdapter;
+    private BancoDados db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista);
+        db = new BancoDados(this);
 
-        sair_final=findViewById(R.id.sair_final);
+        recyclerDados = findViewById(R.id.recyclerDados);
 
-        sair_final.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        setupRecycler();
+    }
+
+    private void setupRecycler() {
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerDados.setLayoutManager(layoutManager);
+
+        listaAdapter = new ListaAdapter(this, db.getDados());
+        recyclerDados.setAdapter(listaAdapter);
+
+        recyclerDados.addItemDecoration(
+                new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
     }
 }

@@ -4,63 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     tools:context=".Lista">
 
-    <ListView
-        android:layout_width="415dp"
-        android:layout_height="434dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="82dp" />
-
-    <Button
-        android:id="@+id/excluir"
-        android:layout_width="251dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
-        android:text="Excluir"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/exportar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/exportar"
-        android:layout_width="251dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
-        android:text="Exportar "
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/sair_final"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/sair_final"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:onClick="sair"
-        android:text="Sair"
-        android:textSize="20sp"
-        android:textStyle="bold"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDados"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/lista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lista"
-        android:textSize="50sp"
-        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

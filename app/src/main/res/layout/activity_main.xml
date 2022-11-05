@@ -6,70 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/fundo"
-        android:layout_width="408dp"
-        android:layout_height="1186dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:color/darker_gray"
-        tools:layout_editor_absoluteY="32dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/coletarDados"
-        android:layout_width="251dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
-        android:text="Coletar Dados"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/excluir"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.802" />
-
-    <Button
-        android:id="@+id/excluir"
-        android:layout_width="251dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
-        android:text="Excluir"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/exportar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/exportar"
-        android:layout_width="251dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="10dp"
-        android:text="Exportar Dados"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/sair_final"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/sair_final"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:onClick="sair"
-        android:text="Sair"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -113,4 +49,48 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <Button
+            android:id="@+id/btColetar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Coletar Dados"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btListar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listar Coletas"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btExportar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Exportar Dados"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btSair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
