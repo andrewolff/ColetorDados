@@ -444,7 +444,7 @@
     <Button
         android:id="@+id/btSalvar"
         android:layout_width="148dp"
-        android:layout_height="59dp"
+        android:layout_height="50dp"
         android:text="Salvar"
         android:textSize="20sp"
         android:textStyle="bold"

@@ -97,7 +97,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|number|numberDecimal"
             android:textAlignment="center" />
 
         <EditText
@@ -106,7 +106,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
         <EditText
@@ -115,7 +115,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
 
@@ -150,7 +150,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
 
@@ -160,7 +160,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
         <EditText
@@ -169,7 +169,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
 
@@ -204,7 +204,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
 
@@ -214,7 +214,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="numberSigned|number|textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
         <EditText
@@ -223,7 +223,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
 
@@ -257,7 +257,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
         <EditText
@@ -266,7 +266,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|number|numberDecimal"
             android:textAlignment="center" />
 
 
@@ -276,7 +276,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
 
@@ -311,7 +311,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
         <EditText
@@ -320,7 +320,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|number|numberDecimal"
             android:textAlignment="center" />
 
         <EditText
@@ -329,7 +329,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
 
@@ -364,7 +364,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
         <EditText
@@ -373,7 +373,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
         <EditText
@@ -382,7 +382,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
 
@@ -417,7 +417,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
         <EditText
@@ -426,7 +426,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
         <EditText
@@ -435,7 +435,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|numberDecimal"
             android:textAlignment="center" />
 
 
@@ -447,7 +447,7 @@
     <Button
         android:id="@+id/btProx1"
         android:layout_width="148dp"
-        android:layout_height="59dp"
+        android:layout_height="50dp"
         android:text="Próxima"
         android:textAlignment="center"
         android:textColorLink="#4CAF50"

@@ -447,7 +447,7 @@
     <Button
         android:id="@+id/btProx2"
         android:layout_width="148dp"
-        android:layout_height="59dp"
+        android:layout_height="50dp"
         android:text="Próxima"
         android:textSize="20sp"
         android:textStyle="bold"
