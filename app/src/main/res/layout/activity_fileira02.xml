@@ -98,6 +98,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|numberDecimal"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Alt1"
             android:textAlignment="center" />
 
         <EditText
@@ -107,6 +109,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number|numberDecimal"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cod1"
             android:textAlignment="center" />
 
         <EditText
@@ -116,6 +120,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number|numberDecimal"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cap2"
             android:textAlignment="center" />
 
 
@@ -151,6 +157,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Alt2"
             android:textAlignment="center" />
 
 
@@ -161,6 +169,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cod2"
             android:textAlignment="center" />
 
         <EditText
@@ -170,6 +180,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cap3"
             android:textAlignment="center" />
 
 
@@ -205,6 +217,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Alt3"
             android:textAlignment="center" />
 
 
@@ -215,6 +229,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cod3"
             android:textAlignment="center" />
 
         <EditText
@@ -224,6 +240,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cap4"
             android:textAlignment="center" />
 
 
@@ -258,6 +276,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Alt4"
             android:textAlignment="center" />
 
         <EditText
@@ -267,6 +287,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cod4"
             android:textAlignment="center" />
 
 
@@ -277,6 +299,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cap5"
             android:textAlignment="center" />
 
 
@@ -312,6 +336,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Alt5"
             android:textAlignment="center" />
 
         <EditText
@@ -321,6 +347,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cod5"
             android:textAlignment="center" />
 
         <EditText
@@ -330,6 +358,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cap6"
             android:textAlignment="center" />
 
 
@@ -365,6 +395,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Alt6"
             android:textAlignment="center" />
 
         <EditText
@@ -374,6 +406,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cod6"
             android:textAlignment="center" />
 
         <EditText
@@ -383,6 +417,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cap7"
             android:textAlignment="center" />
 
 
@@ -418,6 +454,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Alt7"
             android:textAlignment="center" />
 
         <EditText
@@ -427,6 +465,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="numberSigned|number"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editF2Cod7"
             android:textAlignment="center" />
 
         <EditText
